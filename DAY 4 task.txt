@@ -1,0 +1,74 @@
+DAY 4 task
+
+
+a.Print odd numbers in an arrray
+let a = [1,2,3,4,5];
+for (let i=0;i<=a.length-1;i++)
+{ if (a[i]%2 !=0)
+{
+    console.log(a[i]);
+}
+}
+
+b.convert all the strings to tittle caps in a string array
+
+             let a= userInput[0];
+ let b=a.toUpperCase();
+ console.log(b);
+
+c.sum of all the numbers in an array
+
+  let arr=[1,2,3,4,5,6,7,8,9];
+  const sum = arr.reduce(( t, n) =>t+n);
+
+  console.log(sum);
+d.Return all the prime numbers in an array
+
+let num = userInput[0];
+function Prime(num) {
+    for(var i = 0; i < num.length; i++){
+      if(num % i === 0){ return num;
+      }} 
+      
+  
+e.Return all the palindroms in an array
+
+
+
+ var b= userInput[0];
+    var arr = userInput[0].split("").reverse("").join("");
+if(arr==b){
+    console.log(b);
+}else{
+  console.log("it is not a palidrome");
+}
+
+f.Return median of two sorted array of same size
+
+
+  let num = [3,45,67,23,65,44,32];
+  let a = [58,34,2,45,78,53,23];
+  a.sort((a,b) =>a-b);
+  num.sort((a,b) =>a-b);
+  var center = Math.floor(7/2);
+  var d =((num[center]+a[center])/2);
+  console.log(d);
+
+g.Remove all duplicates froom an array
+
+
+  let newarray =new Set(['2','3','4','2','3'])
+  console.log(newarray);
+h.Rotate the array by k times
+
+
+
+
+let arr = [1,2,3,4,5];
+var k = userInput[0];
+for(i=0;i<k;i++){
+var shifted = arr.shift()
+var temparray= slice(1,arr.length)
+temparray.push(shifted);
+}
+console.log(temparray);
